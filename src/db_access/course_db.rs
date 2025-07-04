@@ -6,7 +6,7 @@ pub async fn get_courses_for_teacher_db(
     pool: &PgPool,
     teacher_id: i32,
 ) -> Result<Vec<Course>, MyError> {
-    let rows = sqlx::query_as!(
+    let rows = sqlx::query!(
         Course,
         "SELECT * FROM courses WHERE teacher_id = $1",
         teacher_id
