@@ -1,0 +1,11 @@
+/target
+.DS_Store
+.idea/
+.vscode/
+*.db
+*.sqlite
+*.log
+.env
+Cargo.lock.bk
+credentials.json
+/dump/
